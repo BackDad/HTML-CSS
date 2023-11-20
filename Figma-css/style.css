@@ -6,6 +6,7 @@
 .header{
     padding-top:40px;
     padding-bottom:40px;
+        padding-left:373px;
 }
 
 a {
@@ -39,6 +40,7 @@ a.Home{
     display: grid;
     padding-top:100px;
     padding-bottom:70px;
+        padding-left:373px;
 }
 
 .container .title
@@ -48,6 +50,7 @@ a.Home{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 .description{
@@ -58,6 +61,11 @@ a.Home{
     line-height: normal;
     padding-top:17px;
     padding-bottom:17px;
+
+}
+.button
+{
+    padding-left:373px;
 }
 .button .btn
 {
@@ -87,4 +95,5 @@ a.Home{
 }
 .footer{
      padding: 40px;
+     padding-left:373px;
 }
