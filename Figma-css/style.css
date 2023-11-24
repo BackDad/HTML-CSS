@@ -2,14 +2,23 @@
     padding:0;
     margin:0;
 }
+.main{
+    font-family: 'Raleway', sans-serif;
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    padding-bottom: 100px;
+}
 
 .header{
-    padding-top:40px;
-    padding-bottom:40px;
-        padding-left:373px;
+position: relative;
+    padding:40px;
+    margin: 0 0 40px 40px;
+    display:flex;
+    justify-content:space-between;
 }
 
 a {
+justify-content:space-between;
  text-decoration:none;
     color:black;
 
@@ -18,7 +27,14 @@ a {
 a.Home{
     color:#f00;
 }
-
+.header a .select
+{
+border:none;
+}
+select{
+border:none;
+font-size:14x;
+}
  .title
 {
     color: #000;
@@ -40,7 +56,8 @@ a.Home{
     display: grid;
     padding-top:100px;
     padding-bottom:70px;
-        padding-left:373px;
+    grid-template-columns: 1fr 1fr;
+    gap:32px;
 }
 
 .container .title
@@ -65,8 +82,10 @@ a.Home{
 }
 .button
 {
-    padding-left:373px;
-}
+position: relative;
+    padding-bottom:100px;
+    display:flex;
+    justify-content:flex-start;}
 .button .btn
 {
     border-radius: 50px;
@@ -78,22 +97,22 @@ a.Home{
     font-weight: 400;
     line-height: normal;
     padding-top:15px;
-    padding-bottom:16px;
-    padding-left:35px;
-    padding-right:35px;
     width: 140px;
     height: 50px;
-    flex-shrink: 0;
+
 }
  .button .link{
+    position:absolute;
+    left:175px;
+    top:25px;
     color: #AAA;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin:82px;
 }
 .footer{
-     padding: 40px;
-     padding-left:373px;
+    display: flex;
+    justify-content:space-between;
+    padding-top:100px;
 }
