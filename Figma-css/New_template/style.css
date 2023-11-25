@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+}
+body
+{
+font-family: 'Raleway', sans-serif;
+background:#FFF;
+}
+
+a{
+text-decoration:none;
+color:#000;
+}
+.main{
+
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    padding-bottom: 100px;
+}
+.top{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap:32px;
+margin-top:100px;
+}
+.content{
+display: grid;
+grid-template-columns: 1fr;
+gap:32px;
+margin-bottom:1000px;
+}
+.content_box_2
+{
+ box-shadow: 4px 4px 8px 5px rgba(187, 187, 187, 0.10);
+}
+.content p {
+// Leverage agile frameworks to provide a robust synopsis for high level overviews.
+color: #666666;
+font-size: 15px;
+font-weight: 400;
+line-height: 22.50px;
+word-wrap: break-word
+}
+.content h3{
+// Grow Your Business
+color: black;
+ font-size: 24px;
+ font-weight: 900;
+ word-wrap: break-word
+}
+.content a{
+// Read More...
+color: black;
+ font-size: 11px;
+ font-weight: 400;
+ line-height: 16.50px;
+ word-wrap: break-word
+}
+.maincontent{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap:32px;
+}
+
+.maincontent_box{
+}
