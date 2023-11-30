@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fafafa;
+}
+
+.top-menu {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    height: 75px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-left: 32px;
+}
+
+.right-group {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 32px;
+}
+
+.promo-content {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1E4E6;
+}
+
+.promo-img img {
+    width: 100%;
+}
+
+.promo-text {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.title {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.colored {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+    padding-top: 65px;
+}
+
+.sale-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sale-text {
+    position: absolute;
+}
+
+.sale-text .sale-text-big, h3 {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sale-text .sale-text-big, p {
+
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sale-content-big {
+    grid-column: span 3;
+}
+
+
+.product-box-title {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.product-box-text-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 48px;
+}
+
+.product-box-text {
+
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product-items {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-item-title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 18px;
+    padding-top: 24px;
+}
+
+.product-item-text {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 18px;
+}
+
+.product-item-cost {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.product-item-text-block {
+    background-color: #F8F8F8;
+    padding-left: 16px;
+}
+
+.product-item-img {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 420px;
+    background-color: #F7E4E2;
+    justify-content: center;
+}
+
+.product-box {
+    padding-bottom: 48px;
+}
+.show-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.button {
+    text-decoration: none;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #F26376;
+    height: 48px;
+    width: 212px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
