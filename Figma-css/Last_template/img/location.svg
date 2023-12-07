@@ -1,0 +1,40 @@
+<svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="15" height="18" fill="#E5E5E5"/>
+<g id="Frame 5" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="4432" transform="translate(-387 -4367)" fill="#020A18"/>
+<g id="Footer">
+<g id="Rectangle 53" opacity="0.05" filter="url(#filter0_b_0_1)">
+<rect x="-387" y="-185" width="1921" height="250" rx="10" fill="url(#paint0_linear_0_1)"/>
+</g>
+<g id="Frame 418">
+<g id="footer__information">
+<g id="Frame 418_2">
+<g id="Group 77">
+<g id="Group 71">
+<g id="Group 70">
+<path id="Vector" d="M14 7.8999C14 12.9555 7.5 17.2888 7.5 17.2888C7.5 17.2888 1 12.9555 1 7.8999C1 6.176 1.68482 4.52269 2.90381 3.30371C4.12279 2.08472 5.77609 1.3999 7.5 1.3999C9.22391 1.3999 10.8772 2.08472 12.0962 3.30371C13.3152 4.52269 14 6.176 14 7.8999Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M7.50016 10.0667C8.69678 10.0667 9.66683 9.09668 9.66683 7.90007C9.66683 6.70345 8.69678 5.7334 7.50016 5.7334C6.30355 5.7334 5.3335 6.70345 5.3335 7.90007C5.3335 9.09668 6.30355 10.0667 7.50016 10.0667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_0_1" x="-587" y="-385" width="2321" height="650" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="100"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_1" x1="573.5" y1="-289.756" x2="573.5" y2="465.591" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="4432" fill="white" transform="translate(-387 -4367)"/>
+</clipPath>
+</defs>
+</svg>

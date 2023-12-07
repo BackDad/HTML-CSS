@@ -1,0 +1,38 @@
+<svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="15" height="12" fill="#E5E5E5"/>
+<g id="Frame 5" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="4432" transform="translate(-387 -4287)" fill="#020A18"/>
+<g id="Footer">
+<g id="Rectangle 53" opacity="0.05" filter="url(#filter0_b_0_1)">
+<rect x="-387" y="-105" width="1921" height="250" rx="10" fill="url(#paint0_linear_0_1)"/>
+</g>
+<g id="Frame 418">
+<g id="footer__information">
+<g id="Frame 418_2">
+<g id="Group 76">
+<g id="Group 72">
+<path id="Vector" d="M2.3 1H12.7C13.415 1 14 1.585 14 2.3V10.1C14 10.815 13.415 11.4 12.7 11.4H2.3C1.585 11.4 1 10.815 1 10.1V2.3C1 1.585 1.585 1 2.3 1Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14 2.30005L7.5 6.85005L1 2.30005" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_b_0_1" x="-587" y="-305" width="2321" height="650" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="100"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_1" x1="573.5" y1="-209.756" x2="573.5" y2="545.591" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.2"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="4432" fill="white" transform="translate(-387 -4287)"/>
+</clipPath>
+</defs>
+</svg>
