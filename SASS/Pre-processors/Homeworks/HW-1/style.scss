@@ -1,0 +1,146 @@
+$widthScreen: 1140px;
+$heightTop-Menu: 76px;
+$gapMenu: 35px;
+// Переменные цветов
+
+$colorSiteText: #ba2be3;
+$colorTop-MenuBg: #222;
+$colorTop-MenuLogo: #e8e8e8;
+$colorSelectSite: #f16d7f;
+$colorTopHead: #f8f3f4;
+$colorPromoBoxBg: #f7f7f7;
+$colorArrowsBg: rgba(42, 42, 42, 0.15);
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.center {
+  padding-left: calc(50% - $widthScreen / 2);
+  padding-right: calc(50% - $widthScreen / 2);
+}
+/*Меню*/
+.top-menu {
+  background: $colorTop-MenuBg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: $gapMenu;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    color: $colorTop-MenuLogo;
+  }
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: $gapMenu;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    color: $colorTop-MenuLogo;
+  }
+}
+/*Подменю*/
+.top-head {
+  background: $colorTopHead;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__heading {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: $colorSelectSite;
+  }
+}
+.breadcrumbs__link {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #636363;
+
+  &__site {
+    font-weight: 700;
+    color: $colorSelectSite;
+  }
+}
+.promo-box {
+  background: #f7f7f7;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+}
+hr{
+  width: 63px;
+  height: 4px;
+  color:#ba2be3;
+}
+/*
+  &__arrows {
+    background: $colorArrowsBg;
+  }
+  &__sale-info {
+    border: 1px solid #eaeaea;
+
+    &_hr1 {
+      width: 63px;
+      height: 3px;
+      color: #ef5b70;
+    }
+    &__top-text {
+      &_title1 {
+        color: #f16d7f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-top: 65px;
+        padding-bottom: 43px;
+      }
+      &_title2 {
+        color: #4d4d4d;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      &_info-text {
+        color: #5e5e5e;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      &_price {
+        color: #ef5b70;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+  }
+}
+*/
