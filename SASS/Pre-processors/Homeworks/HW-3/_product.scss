@@ -1,0 +1,173 @@
+.top-head {
+  background-color: #f8f3f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include flex_between();
+  &__heading {
+    color: $colorSelectSite;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.breadcrumbs__link {
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  &:not(:last-child)::after {
+    content: "  /";
+  }
+  &_site {
+    color: $colorSelectSite;
+    font-weight: 700;
+  }
+}
+
+.carousel {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 42px;
+  // min-height: 777px;
+  // position: relative;
+}
+
+.carousel-inner {
+  // position: relative;
+  max-width: 597px;
+  z-index: 0;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='black'/%3E%3C/svg%3E");
+  width: 31px;
+  height: 31px;
+  padding: 8px;
+  background-color: rgba(42, 42, 42, 0.15);
+  &:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F26376'/%3E%3C/svg%3E");
+  }
+}
+
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z" fill="black"/></svg>');
+  width: 31px;
+  height: 31px;
+  padding: 8px;
+  background-color: rgba(42, 42, 42, 0.15);
+  &:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z' fill='%23F16D7F'/%3E%3C/svg%3E");
+  }
+}
+
+.fulldsc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 63px;
+  &__dsc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // position: absolute;
+    position: relative;
+    // max-width: 1140px;
+    background-color: #fff;
+    top: -65px;
+    border: 1px solid #eaeaea;
+    padding: 65px 250px; // 250 не респонсив
+  }
+  &__heading {
+    color: $colorSelectSite;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+  &__hr-top {
+    width: 63px;
+    border: 3px solid #ef5b70;
+    margin-bottom: 12px;
+  }
+  &__brand {
+    color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 48px;
+  }
+  &__text {
+    max-width: 555px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  &__price {
+    color: $colorSelectSite;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 65px;
+  }
+  &__hr-bottom {
+    width: 641px; // не респонсив
+    border: 1px solid #eaeaea;
+    margin-bottom: 65px;
+  }
+}
+
+.sort {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 48px;
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__heading {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.product-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 48px;
+  border: 1px solid #ff6a6a;
+  text-align: center;
+  gap: 18px;
+
+  color: #f26376;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    color: #fff;
+    background-color: #f26376;
+  }
+  &:hover svg path {
+    fill: #fff;
+  }
+}
+
+.catalog--product {
+  margin-bottom: 128px;
+}
