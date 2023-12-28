@@ -1,0 +1,40 @@
+.footer
+  @extend .center
+  @include flex_between()
+
+  padding-top: 24px
+  padding-bottom: 24px
+  background-color: $backBlock
+
+  &__text
+    text-transform: capitalize
+    color: #fbfbfb
+    font-size: 16px
+    font-weight: 400
+
+.social
+  @include flex_center(7px)
+
+  &__box
+    display: flex
+    align-items: center
+    background-color: #fff
+    padding: 8px 11px
+
+    &:hover
+      background-color: $colorSelectSite
+
+    &:hover svg path
+      fill: #fff
+
+@media (max-width: 1024px)
+  .footer__top
+    padding-top: 64px
+    padding-bottom: 140px
+    gap: 48px
+
+@media (max-width: 767px)
+  .footer
+    flex-direction: column-reverse
+    padding-top: 51px
+    gap: 40px

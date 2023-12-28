@@ -1,0 +1,142 @@
+.carousel
+  display: flex
+  justify-content: center
+  background-color: #f7f7f7
+
+  &-inner
+    z-index: 0
+    padding-top: 11px
+    padding-bottom: 42px
+    max-width: 597px
+
+  &-control-prev-icon
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='black'/%3E%3C/svg%3E")
+    width: 31px
+    height: 31px
+    padding: 8px
+    background-color: rgba(42, 42, 42, 0.15)
+
+    &:hover
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F26376'/%3E%3C/svg%3E")
+
+  &-control-next-icon
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z" fill="black"/></svg>')
+    width: 31px
+    height: 31px
+    padding: 8px
+    background-color: rgba(42, 42, 42, 0.15)
+    &:hover
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M9.2998 23.2499L17.0498 15.4999L9.2998 7.7499L10.8498 4.6499L21.6998 15.4999L10.8498 26.3499L9.2998 23.2499Z' fill='%23F16D7F'/%3E%3C/svg%3E")
+
+.fulldsc
+  @extend .center
+
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding-bottom: 63px
+
+  &__dsc
+    position: relative
+    top: -65px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 65px 250px
+    background-color: #fff
+    border: 1px solid #eaeaea
+
+  &__heading
+    color: $colorSelectSite
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 12px
+
+  &__hr-top
+    margin-bottom: 12px
+    width: 63px
+    border: 3px solid #ef5b70
+
+  &__brand
+    margin-bottom: 48px
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 300
+
+  &__text
+    text-align: center
+    max-width: 555px
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+
+  &__price
+    margin-bottom: 65px
+    color: $colorSelectSite
+    font-size: 24px
+    font-weight: 300
+
+  &__hr-bottom
+    width: 641px
+    border: 1px solid #eaeaea
+    margin-bottom: 65px
+
+  &__button
+    @extend .button
+    @include flex_center(18px)
+
+    &:hover svg path
+      fill: #fff
+
+.sort
+  display: flex
+  gap: 23px
+  margin-bottom: 48px
+
+  &__summary
+    display: flex
+    align-items: center
+    gap: 10px
+
+  &__heading
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+.product-box_mb
+  margin-bottom: 128px
+
+@media (max-width: 1024px)
+  .carousel
+    padding-top: 29px
+    padding-bottom: 29px
+    
+    &-control
+      &-prev
+        justify-content: start
+
+      &-next
+        justify-content: end
+
+  .product
+    &_hidden-table
+      display: none
+
+    &_first
+      order: 1
+
+@media (max-width: 767px)
+  .product
+    &-box_mb
+      margin-bottom: 64px
+
+    &_hidden-table
+      display: none
+
+    &_first
+      order: 1
+
+  .carousel-inner
+    padding-bottom: 85px

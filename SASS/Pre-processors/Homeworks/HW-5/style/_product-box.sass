@@ -1,0 +1,70 @@
+.product-box
+  @extend .center
+
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-content: center
+  gap: 30px
+
+.product
+  position: relative
+
+  &:hover &__img
+    filter: brightness(0.5)
+
+  &:hover &__add
+    display: flex
+
+  &__img
+    width: 100%
+
+  &__add
+    position: absolute
+    top: 188px
+    left: 111px
+    width: 139px
+    height: 44px
+    display: none
+    align-items: center
+    justify-content: center
+    gap: 11px
+    border: 1px solid #fff
+    font-weight: 400
+    font-size: 14px
+    color: #fff
+    
+    &:hover
+      box-shadow: 0 0 5px #fff
+
+    &:hover svg path
+     fill: $colorSelectSite
+
+  &__content
+    @include flex_col(16px)
+    padding: 24px 16px
+    background: #f8f8f8
+
+  &__heading
+    color: #222
+    font-size: 13px
+    font-weight: 400
+
+  &__text
+    color: #5d5d5d
+    font-size: 14px
+    font-weight: 300
+
+  &__price
+    font-size: 16px
+    font-weight: 400
+    color: $colorSelectSite
+
+@media (max-width: 1024px)
+  .product-box
+    grid-template-columns: repeat(2, 1fr)
+    gap: 16px
+
+@media screen and ( max-width: 767px )
+  .product-box
+    grid-template-columns: repeat(1, 1fr)
+    gap: 16px

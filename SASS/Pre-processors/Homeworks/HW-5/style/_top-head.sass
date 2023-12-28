@@ -1,0 +1,21 @@
+.top-head
+  @include flex_between()
+  @extend .center
+
+  padding-top: 60px
+  padding-bottom: 60px
+  background-color: #f8f3f4
+
+  &__heading
+    color: $colorSelectSite
+    font-size: 24px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+@media ( max-width: 767px )
+    .top-head
+        flex-direction: column
+        gap: 32px
+        padding-top: 24px
+        padding-bottom: 46px

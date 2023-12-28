@@ -1,0 +1,177 @@
+summary
+  display: block
+
+summary::-webkit-details-marker
+  display: none
+
+.filter-sort
+  @extend .center
+
+  position: relative
+  display: flex
+  justify-content: space-between
+  gap: $gapGrid
+  box-sizing: border-box
+  height: 132px
+  padding-top: 39px
+
+.filter
+  position: relative
+  z-index: 10
+  box-sizing: border-box
+  padding-top: 13px
+  max-width: 360px
+
+  &__content
+    background-color: #fff
+    padding: 0 16px 16px 16px
+
+  &[open]
+    background: #fff
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+  &[open] &__heading
+    color: $colorSelectSite
+
+  &[open] path
+    fill: $colorSelectSite
+
+  &__summary
+    display: flex
+    align-items: center
+    gap: 11px
+    padding-left: 16px
+
+  &__heading
+    color: $colorTextBlack
+    font-size: 14px
+    font-weight: 600
+
+  &__item
+    margin-top: 16px
+
+  &__link-box
+    @include flex_col(11px)
+
+    padding: 24px 16px
+
+  &__link
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+    &:hover
+      color: $colorSelectSite
+
+  &__head
+    padding: 8px 11px 11px 11px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    border-bottom: 1px solid #ebebeb
+    border-left: 5px solid $colorSelectSite
+
+  &__item[open] &__head
+    color: $colorSelectSite
+
+.sort
+  display: flex
+  gap: 18px
+  padding-top: 12px
+
+  &__details
+    position: relative
+
+  &__summary
+    display: flex
+    align-items: center
+    gap: 10px
+
+  &__check
+    display: flex
+    align-items: center
+    gap: 9px
+    font-family: 'Roboto'
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  &__heading
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+  &__box
+    @include flex_col(8px)
+
+    position: absolute
+    left: -9px
+    top: 22px
+    z-index: 1
+    padding: 7px 30px 11px 9px
+    background: #fff
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21)
+
+.pagination
+  @include flex_center(15px)
+
+  justify-content: center
+  margin: 48px auto 95px
+  padding: 11px 15px
+  width: 283px
+  border: 1px solid #ebebeb
+
+  &__link-box
+    display: flex
+
+  &__link
+    color: #c4c4c4
+    font-size: 16px
+    font-weight: 300
+
+  &__link:hover
+    color: $colorSelectSite
+
+  &__link:not(:last-child)
+    margin-right: 19px
+
+@media (max-width: 1024px)
+  .product_hidden
+    display: none
+
+@media (max-width: 767px)
+
+  .filter
+    &-sort
+      height: 100px
+      padding-top: 26px
+
+    &__summary
+      padding-left: 0
+
+    &__heading
+      display: none
+
+  .sort
+    gap: 24px
+
+    &__heading
+      font-size: 12px
+
+  .product
+    &_hidden
+      &-mobile
+        display: none
+
+      &-table
+        display: block
+
+    &_first
+      order: 0
+
+  .pagination
+    margin-top: 40px
+    margin-bottom: 63px
+
+
+    

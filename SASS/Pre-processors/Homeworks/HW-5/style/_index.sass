@@ -1,0 +1,158 @@
+.promo
+  @extend .center_big
+  display: flex
+  align-items: center
+  background: #f1e4e6
+
+  &__img
+    max-width: 50%
+
+  &__info
+    padding-left: 16px
+    margin-left: 65px
+    border-left: 12px solid $colorSelectSite
+
+  &__title
+    text-transform: uppercase
+    color: $colorHeader
+    font-size: 32px
+    font-weight: 700
+
+    &_main
+      font-size: 48px
+      font-weight: 900
+
+    &_fashion
+      color: $colorSelectSite
+
+.sale
+  @extend .center
+
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 30px
+  padding-top: 64px
+  padding-bottom: 96px
+
+  &__item
+    position: relative
+
+  &__img
+    width: 100%
+
+  &__shadow
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    height: 100%
+    opacity: 0.7
+    transition: all 0.3s
+
+    &:hover
+      opacity: 0.2
+
+  &__item__big
+    position: relative
+    min-height: 180px
+    grid-column: 1 / -1
+    background-image: url("../img/sibig.jpg")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+  &__content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    @include flex_col_jc-c_ai-c
+
+  &__text
+    text-transform: uppercase
+    text-align: center
+    font-weight: 400
+    font-size: 16px
+    color: #ffffff
+
+  &__heading
+    text-transform: uppercase
+    text-align: center
+    color: $colorSelectSite
+    font-size: 24px
+    font-weight: 700
+
+.featured
+  @extend .center
+  @include flex_column_center(6px)
+
+  padding-bottom: 48px
+
+  &__header
+    color: $colorHeader
+    font-size: 30px
+    font-weight: 400
+
+  &__text
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+
+  &__button-box
+    @include flex_jc-c_ai-c
+
+  &__button
+    @extend .button
+  
+    margin-top: 48px
+    margin-bottom: 95px
+    text-transform: capitalize
+
+@media (max-width: 1140px)
+
+  .promo
+    &__content
+      padding-left: 42px
+
+    &__info
+      margin-left: 42px
+
+    &__title
+      font-size: 24px
+      &--main
+        font-size: 44px
+
+  .sale
+    padding-top: 20px
+    padding-bottom: 154px
+    gap: 20px
+
+  .featured-items
+    padding-bottom: 72px
+
+@media (max-width: 767px)
+  .not-mobile
+    display: none
+
+  .promo
+    min-height: 363px
+    justify-content: center
+    &__img
+      display: none
+
+    &__title
+      font-size: 20px
+      &--main
+        font-size: 38px
+
+  .sale
+    grid-template-columns: repeat(1, 1fr)
+    &__item__big
+      min-height: 111px
+
+    &__text
+      font-size: 16px
+
+    &__heading
+      font-size: 24px

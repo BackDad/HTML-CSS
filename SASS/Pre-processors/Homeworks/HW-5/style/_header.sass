@@ -1,0 +1,96 @@
+.header
+  @extend .center
+  @include flex_between()
+
+  min-height: 75px
+  background: $backBlock
+
+  &__left
+    @include flex_center(41px)
+
+  &__icon:hover path
+    fill: $colorSelectSite
+
+  &__right
+    @include flex_center(33px)
+
+  &__checkbox
+    position: absolute
+    visibility: hidden
+    left: -9999999px
+    &:checked ~ .mobile-menu
+      right: 0
+
+  &__cart
+    position: relative
+
+  &__round
+    position: absolute
+    top: -8px
+    right: -8px
+    z-index: 1
+
+  &__num
+    color: #fff
+    font-size: 12px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    position: absolute
+    top: -6px
+    right: -2px
+    z-index: 2
+
+.mobile-menu
+  position: absolute
+  top: 75px
+  right: -232px
+  z-index: 1
+  transition: right 0.6s
+  width: 232px
+  background: #fff
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  padding: 32px
+  box-sizing: border-box
+
+  &__heading
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+
+  &__link
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: #6f6e6e
+
+    &:hover
+      color: $colorSelectSite
+
+  &__title
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: $colorSelectSite
+
+  &__list
+    @include flex_col(11px)
+
+    padding-left: 21px
+    padding-top: 12px
+
+    list-style-type: none
+
+  &__box
+    display: flex
+    flex-direction: column
+    gap: 20px
+    padding-top: 24px
+
+@media (max-width: 767px)
+  .not-mobile
+    display: none

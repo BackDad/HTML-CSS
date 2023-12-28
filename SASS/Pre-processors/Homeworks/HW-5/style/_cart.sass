@@ -1,0 +1,242 @@
+.cart
+  &-wrapper
+    @extend .center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 64px
+    padding-top: 96px
+    padding-bottom: 128px
+
+  &-product
+    &__box
+      @include flex_column_center(40px)
+
+      margin-bottom: 72px
+
+    &__item
+      display: flex
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+    &__img
+      display: flex
+      max-width: 262px
+
+    &__dsc
+      position: relative
+      width: 390px
+      padding: 22px 22px 62px 31px
+
+    &__heading
+      margin-bottom: 42px
+      color: #222
+      font-size: 24px
+      font-weight: 400
+
+    &__details
+      @include flex_col(6px)
+
+    &__subtitle
+      color: #575757
+      font-size: 22px
+      font-weight: 400
+
+      &_color
+        color: $colorSelectSite
+
+      &_value
+        color: #6f6e6e
+
+      &_position
+        display: flex
+        gap: 24px
+
+      &_input
+        text-align: center
+        width: 44px
+        border: 1px solid #EAEAEA
+        color: #575757
+        font-size: 22px
+        font-weight: 400
+
+    &__exit
+      position: absolute
+      top: 28px
+      right: 28px
+
+    &__btn-box
+      display: flex
+      justify-content: space-between
+
+      &_btn
+        @extend .btn
+
+        display: flex
+        justify-content: center
+        padding: 16px 39px
+        text-transform: uppercase
+
+  &-order
+    @include flex_col(23px)
+
+    &__address
+      display: flex
+      flex-direction: column
+      width: 360px
+
+      &_btn
+        @extend .btn
+
+        width: 105px
+        padding: 11px 14px
+        text-transform: uppercase
+        color: #4A4A4A
+        font-size: 11px
+
+    &__header
+      margin-bottom: 20px
+      text-transform: uppercase
+      color: #222
+      font-size: 16px
+      font-weight: 300
+
+    &_entryfield-box
+      @extend .entryfield-box
+
+      margin-bottom: 23px
+
+    &__checkout
+      padding: 39px 34px 42px 53px
+      background-color: #f5f3f3
+
+    &__total
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+    &__sub
+      margin-bottom: 12px
+
+      &_text
+        color: #4a4a4a
+        font-size: 11px
+        font-weight: 400
+
+      &_price
+        padding-left: 15px
+
+    &__grand
+      margin-bottom: 21px
+      color: #222
+      font-size: 16px
+      font-weight: 300
+
+      &_price
+        padding-left: 15px
+        color: $colorSelectSite
+        font-weight: 700
+
+      &_button
+        @extend .button
+
+        color: #fff
+        font-weight: 300
+        background-color: $colorSelectSite
+        border: 1px solid $colorSelectSite
+
+        &:hover
+          background-color: #fff
+          color: $colorSelectSite
+          border: none
+          box-shadow: 0px 4px 4px rgba(241, 109, 127, 0.69)
+
+    &__hr
+      margin-bottom: 17px
+      width: 100%
+      border: 1px solid #e2e2e2
+
+@media (max-width: 1140px )
+  .cart
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      padding-top: 59px
+    &-product
+      &__dsc
+        width: 472px
+
+      &__box
+        margin-bottom: 62px
+
+      &__btn-box
+        justify-content: center
+        gap: 48px
+    &-order
+      flex-direction: row
+      gap: 15px
+
+@media (max-width: 767px)
+  .top-head
+    padding-top: 50px
+    padding-bottom: 69px
+
+  .cart
+    &-wrapper
+      padding-bottom: 96px
+      gap: 48px
+
+    &-product
+      &__box
+        align-items: center
+        margin-bottom: 30px
+
+      &__img
+        max-width: 144px
+
+      &__dsc
+        width: 214px
+        padding: 13px 13px 38px 17px
+
+      &__heading
+        font-size: 16px
+        margin-bottom: 25px
+
+      &__details
+        gap: 3px
+
+      &__subtitle
+        font-size: 14px
+
+        &_input
+          width: 24px
+          font-size: 10px
+
+      &__exit
+        top: 11px
+        right: 14px
+
+        & svg
+          width: 9px
+          height: 11px
+
+      &__btn-box
+        gap: 9px
+
+        &_btn
+          width: 175px
+          padding: 9px 0
+          text-transform: lowercase
+          font-size: 12px
+
+        &_trans
+          text-transform: capitalize
+
+    &-order
+      flex-direction: column
+      gap: 48px
+
+      &__address
+        &_btn
+          text-transform: lowercase
+        &_trans
+          text-transform: capitalize

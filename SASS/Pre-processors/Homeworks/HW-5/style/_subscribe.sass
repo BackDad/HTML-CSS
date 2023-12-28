@@ -1,0 +1,78 @@
+.subscribe
+    @extend .center
+    @include flex_between()
+
+    padding-top: 97px
+    padding-bottom: 126px
+    background: linear-gradient( 0deg,rgba(244, 244, 244, 0.7),rgba(244, 244, 244, 0.7)),url(img/footer-bg.png)
+    background-position: bottom
+    background-size: cover
+
+.quote
+    @include flex_center(30px)
+
+    justify-content: center
+    max-width: 360px
+
+    &__text
+        text-align: center
+        color: #222
+        font-size: 20px
+        font-weight: 400
+
+.invitation
+    @include flex_column_center(30px)
+
+    &__title
+        text-align: center
+        text-transform: uppercase
+        color: #222
+        font-size: 18px
+        font-weight: 400
+        line-height: 167.2%
+        color: #222
+        line-height: 167.2%
+
+        &_main
+            font-size: 24px
+            font-weight: 700
+
+    &__form
+        display: flex
+
+        &_email
+            padding: 16px 22px
+            color: #222224
+            font-size: 14px
+            font-weight: 400
+            outline: none !important
+            border: none !important
+            border-top-left-radius: 50px
+            border-bottom-left-radius: 50px
+            background-color: #E1E1E1
+
+        &_button
+            @extend .button
+
+            text-align: center
+            padding: 16px 22px
+            border-top-right-radius: 50px
+            border-bottom-right-radius: 50px
+            background-color: $colorSelectSite
+            color: #fff
+            font-size: 14px
+            border: none !important
+            
+            &:hover
+                color: $colorSelectSite
+                background-color: #fff
+
+@media (max-width: 1024px)
+    .subscribe
+        justify-content: center
+        padding-top: 64px
+        gap: 48px
+
+@media (max-width: 767px)
+    .subscribe
+        gap: 59px

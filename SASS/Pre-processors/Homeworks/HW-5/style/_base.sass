@@ -1,0 +1,153 @@
+*
+    margin: 0
+    padding: 0
+
+html,
+body,
+div,
+img,
+a,
+hr,
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+select,
+figure,
+textarea,
+button
+    box-sizing: border-box
+    border: none
+    border-radius: 0
+    margin: 0
+    padding: 0
+    font-family: inherit
+    font-size: inherit
+    font-style: inherit
+    font-weight: inherit
+    outline: none
+    vertical-align: top
+    transition: none
+
+body
+    font-style: normal
+    line-height: normal
+    font-family: 'Lato'
+    display: flex
+    flex-direction: column
+    margin: 0
+    min-height: 100vh
+
+img
+    max-width: 100%
+
+a
+    text-decoration: none
+
+.top
+    position: relative
+    overflow: hidden
+    flex: 1
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+    &_big
+        padding-left: calc(50% - 800px)
+        padding-right: calc(50% - 800px)
+
+.entryfield
+    &-box
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    &__input
+        border: 1px solid #a4a4a4
+        color: #b1b1b1
+        font-size: 13px
+        font-style: normal
+        font-weight: 300
+        line-height: normal
+        padding: 13px 17px
+
+.label
+    font-size: 11px
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    margin-right: 15px
+    line-height: 32px
+
+.radio
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    border-radius: 50%
+    width: 17px
+    height: 17px
+    border: 1px solid #999
+    outline: none
+    margin-right: 10px
+    position: relative
+    top: 4px
+    &:checked
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="6.5" fill="%23F16D7F"/></svg>')
+        background-repeat: no-repeat
+        background-position: center
+
+.btn
+    display: inline-block
+    border: 1px solid #a4a4a4
+    color: #000
+    font-size: 14px
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    &:hover
+        color: #fff
+        background-color: #f26376
+        border-color: #f26376
+
+.button
+    display: inline-block
+    padding: 15px 39px
+    border: 1px solid #ff6a6a
+    color: #f26376
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    &:hover
+        color: #fff
+        background-color: #f26376
+
+.breadcrumbs
+    &__link
+        color: #636363
+        font-size: 14px
+        font-weight: 300
+
+        &:not(:last-child)::after
+            content: " /"
+
+        &_site
+            color: $colorSelectSite
+            font-weight: 700
+
+@media (max-width: 1024px)
+    .center
+        padding-left: 16px
+        padding-right: 16px
+
+@media (max-width: 767px)
+    .center
+        padding-left: 8px
+        padding-right: 8px

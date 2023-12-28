@@ -1,0 +1,107 @@
+.registration
+  @extend .center
+
+  display: flex
+  justify-content: space-between
+  gap: 40px
+  padding-top: 64px
+  padding-bottom: 96px
+
+  &-data
+    width: 360px
+
+  &-name
+    @include flex_col(20px)
+
+    width: 360px
+    margin-bottom: 33px
+
+    &__heading
+      color: #222
+      font-size: 16px
+      font-weight: 300
+
+  &-sex
+    display: flex
+    align-items: baseline
+    margin-bottom: 35px
+
+  &-login
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    gap: 20px
+    margin-bottom: 39px
+
+    &__password
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+
+  &-login:last-child
+    gap: 15px
+
+  &__button
+    @extend .button
+
+    padding: 15px 30px
+    border: 1px solid $colorSelectSite
+    color: #fff
+    background-color: $colorSelectSite
+    font-size: 14px
+
+    &:hover
+      color: $colorSelectSite
+      background-color: #fff
+
+    &:hover path
+      fill: $colorSelectSite
+
+    & svg
+      margin-left: 20px
+
+  &-promo
+    max-width: 652px
+    @include flex_col(21px)
+
+    &__heading
+      color: #000
+      font-size: 24px
+      font-weight: 300
+
+    &__text
+      color: #000
+      font-size: 24px
+      font-weight: 300
+
+  &-advantages
+    @include flex_col(16px)
+
+    &__text
+      color: #000
+      font-size: 24px
+      font-weight: 300
+
+    & svg
+      margin-right: 23px
+
+@media (max-width: 1140px )
+
+  .registration
+    padding-top: 40px
+    gap: 22px
+    
+    &-promo
+      &__heading
+        font-size: 16px
+      &__text
+        font-size: 16px
+    
+    &-advantages
+      &__text
+        font-size: 16px
+
+@media (max-width: 767px)
+  .registration
+    flex-direction: column
+    gap: 40px
