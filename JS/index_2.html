@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework advanced 3 Task 1</title>
+  </head>
+  <body>
+    <!--Задание 2 
+        Вы разрабатываете систему отзывов для вашего веб-сайта.
+        Пользователи могут оставлять отзывы, но чтобы исключить слишком короткие или
+        слишком длинные сообщения, вы решаете установить некоторые ограничения.
+        1. Создайте HTML-структуру с текстовым полем для ввода отзыва, кнопкой для отправки и контейнером, где будут отображаться отзывы.
+        2. Напишите функцию, которая будет добавлять отзыв в контейнер с отзывами. Однако если длина введенного отзыва менее 50 или более 500 символов, функция должна генерировать исключение.
+        3. При добавлении отзыва, он должен отображаться на странице под предыдущими отзывами, а не заменять их. -->
+
+    <input type="text" class="user-input" placeholder="Введите отзыв" />
+    <button class="add-button">Отправить</button>
+    <div class="container"></div>
+    <div class="error-message"></div>
+
+    <script>
+      const stringInput = document.querySelector(".user-input");
+      const addButton = document.querySelector(".add-button");
+      const feedbackContainer = document.querySelector(".container");
+      const errorMessage = document.querySelector(".error-message");
+
+      addButton.addEventListener("click", () => {
+        try {
+          const inputData = stringInput.value;
+          if (inputData.length < 50 || inputData.length > 500) {
+            throw new Error(
+              " Введенная строка не удовлетворяет количеству введённых символов"
+            );
+          }
+          const pWithFeedback = document.createElement("p");
+          pWithFeedback.textContent = inputData;
+
+          feedbackContainer.appendChild(pWithFeedback);
+          stringInput.value = "";
+          errorMessage.textContent = "";
+        } catch (err) {
+          errorMessage.textContent = err.message;
+        }
+      });
+    </script>
+  </body>
+</html>
