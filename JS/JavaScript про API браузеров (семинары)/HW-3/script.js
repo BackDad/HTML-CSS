@@ -1,6 +1,6 @@
 // app.js
 
-const accessKey = "4wqooy3h5unlt7Ijus-YqltkFFNJB8VRBWnUgRUZ3Ak";
+const accessKey = "";
 const apiUrl = "https://api.unsplash.com/photos/random";
 const likeKey = "likedPhotos";
 const viewedKey = "viewedPhotos";
